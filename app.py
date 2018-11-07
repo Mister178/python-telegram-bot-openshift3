@@ -11,11 +11,11 @@ logger = logging.getLogger(__name__)
 TOKEN = '561121201:AAEMcoIuVCBsjyGa6DvxGRiAKTTyoagfjik'
 
 
-def start(bot, update):
+def danil(bot, update):
     """Send a message when the command /start is issued."""
     """update.message.reply_text('Welcome to the Test Bot! I will reply you what you will write me.')"""
     bot.send_message(chat_id=update.message.chat_id,
-                     text='<b>youtube site</b>,<a href="https://www.youtube.com/?gl=KZ">youtube</a>', parse_mode=ParseMode.HTML)
+                     text='<b>youtube site</b>,<a href="https://www.youtube.com/watch?v=cP87KbYF6do">youtube</a>', parse_mode=ParseMode.HTML)
 def help(bot, update):
     """Send a message when the command /help is issued."""
     # update.message.reply_text('You can get any help here.')
