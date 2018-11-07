@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 TOKEN = '561121201:AAEMcoIuVCBsjyGa6DvxGRiAKTTyoagfjik'
 
 
-def danil(bot, update):
+def start(bot, update):
     """Send a message when the command /start is issued."""
     """update.message.reply_text('Welcome to the Test Bot! I will reply you what you will write me.')"""
     bot.send_message(chat_id=update.message.chat_id,
@@ -93,7 +93,7 @@ def setup(webhook_url=None):
         updater = Updater(TOKEN)  # Create the EventHandler and pass it your bot's token.
         bot = updater.bot
         dp = updater.dispatcher  # Get the dispatcher to register handlers
-        dp.add_handler(CommandHandler("danil", danil))  # on /start command answer in Telegram
+        dp.add_handler(CommandHandler("start", start))  # on /start command answer in Telegram
         dp.add_handler(CommandHandler("help", help))  # on /help command answer in Telegram
         """dp.add_handler(CommandHandler("dolintenge", dolintenge))"""
         dp.add_handler(CallbackQueryHandler(button))
