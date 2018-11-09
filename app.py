@@ -18,7 +18,7 @@ def start(bot, update):
                      text='<b>KAZGUU site</b>,<a href="http://kazguu.kz/ru/">KAZGUU</a>', parse_mode=ParseMode.HTML)
 
 
-def help(bot, update):
+def football(bot, update):
     """Вывести сообщение, когда отправлена команда /start.
     Это может быть сообщение о том, что ваш бот может делать и список команд"""
     update.message.reply_text('Тут вы можете получить любую помощь.')
@@ -50,7 +50,7 @@ def main():
     #bot = updater.bot
     dp = updater.dispatcher  # Объявление диспетчера, чтобы потом зарегистрировать handlers (обработчики)
     dp.add_handler(CommandHandler("start", start))  # Отвечает на команду /start в Телеграм
-    dp.add_handler(CommandHandler("help", help))  # Отвечает на команду /help в Телеграм
+    dp.add_handler(CommandHandler("football", football))  # Отвечает на команду /help в Телеграм
     dp.add_handler(CallbackQueryHandler(button))
 
 
