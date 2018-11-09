@@ -23,9 +23,9 @@ def help(bot, update):
     Это может быть сообщение о том, что ваш бот может делать и список команд"""
     update.message.reply_text('Тут вы можете получить любую помощь.')
 
-    keyboardButtons = [[InlineKeyboardButton("Помощь", callback_data="1")],
+    keyboardButtons = [[InlineKeyboardButton("неПомощь", callback_data="1")],
                        [InlineKeyboardButton("Примеры", callback_data="2")],
-                       [InlineKeyboardButton("Ссылка", url="http://google.com")]]
+                       [InlineKeyboardButton("неСсылка", url="http://google.com")]]
     keyboard = InlineKeyboardMarkup(keyboardButtons)
     update.message.reply_text('Сделайте выбор:', reply_markup=keyboard)
 
