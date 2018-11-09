@@ -26,8 +26,7 @@ def help(bot, update):
     keyboardButtons = [[InlineKeyboardButton("неПомощь", callback_data="1")],
                        [InlineKeyboardButton("Примеры", callback_data="2")],
                        [InlineKeyboardButton("неСсылка", url="http://google.com")],
-                      [InlineKeyboardButton("ЛЧ", url="https://www.google.com.ua/search?q=%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0+%D0%BB%D0%B8%D0%B3%D0%B8+%D1%87%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2&ie=&oe=#sie=lg;/g/11c743v3x1;2;/m/0c1q0;st;fp;1
-")]]
+                      [InlineKeyboardButton("ЛЧ", url="https://clck.ru/EgJi3")]]
     keyboard = InlineKeyboardMarkup(keyboardButtons)
     update.message.reply_text('Сделайте выбор:', reply_markup=keyboard)
 
