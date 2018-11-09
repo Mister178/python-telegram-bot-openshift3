@@ -50,12 +50,8 @@ def main():
     dp = updater.dispatcher  # Объявление диспетчера, чтобы потом зарегистрировать handlers (обработчики)
     dp.add_handler(CommandHandler("start", start))  # Отвечает на команду /start в Телеграм
     dp.add_handler(CommandHandler("help", help))  # Отвечает на команду /help в Телеграм
-    dp.add_handler(CommandHandler("convert", convert, pass_args=True))
     dp.add_handler(CallbackQueryHandler(button))
-    dp.add_handler(CommandHandler("guessing", guessing, pass_args=True))
 
-    # Для ответа бота на текстовые (не командные) сообщения.
-    dp.add_handler(MessageHandler(Filters.text, echo))  # Бот отвечает тем сообщением, которое вы ему написали (эхо-бот)
 
     # Запись всех ошибок
     dp.add_error_handler(error)
