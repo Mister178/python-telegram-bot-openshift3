@@ -23,9 +23,9 @@ def football(bot, update):
     Это может быть сообщение о том, что ваш бот может делать и список команд"""
     update.message.reply_text('Тут вы можете получить любую помощь.')
 
-    keyboardButtons = [[InlineKeyboardButton("неПомощь", callback_data="1")],
-                       [InlineKeyboardButton("Примеры", callback_data="2")],
-                       [InlineKeyboardButton("неСсылка", url="http://google.com")],
+    keyboardButtons = [[InlineKeyboardButton("BAR", url1="numl.org/ebc")],
+                       [InlineKeyboardButton("Трансляции", url="https://www.soccerstand.com/ru/")],
+                       [InlineKeyboardButton("ЛЕ", url="numl.org/ebe)],
                       [InlineKeyboardButton("ЛЧ", url="https://clck.ru/EgJi3")]]
     keyboard = InlineKeyboardMarkup(keyboardButtons)
     update.message.reply_text('Сделайте выбор:', reply_markup=keyboard)
