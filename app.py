@@ -28,7 +28,7 @@ def football(bot, update):
                        [InlineKeyboardButton("ЛЕ", url="numl.org/ebe")],
                       [InlineKeyboardButton("ЛЧ", url="https://clck.ru/EgJi3")]]
     keyboard = InlineKeyboardMarkup(keyboardButtons)
-    update.message.reply_text('Сделайте выбор:', reply_markup=keyboard.)
+    update.message.reply_text('Сделайте выбор:', reply_markup=keyboard)
 
 
 def button(bot, update):
