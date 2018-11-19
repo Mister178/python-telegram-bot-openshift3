@@ -21,7 +21,6 @@ def start(bot, update):
 def football(bot, update):
     """Вывести сообщение, когда отправлена команда /start.
     Это может быть сообщение о том, что ваш бот может делать и список команд"""
-    update.message.reply_text('Тут вы можете получить любую помощь.')
 
     keyboardButtons = [[InlineKeyboardButton("BAR", url1="numl.org/ebc")],
                        [InlineKeyboardButton("Трансляции", url="https://www.soccerstand.com/ru/")],
