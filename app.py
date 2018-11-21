@@ -15,20 +15,20 @@ def start(bot, update):
     Обычно это приветственное сообщение"""
     """update.message.reply_text('Welcome to the Test Bot! I will reply you what you will write me.')"""
     bot.send_message(chat_id=update.message.chat_id,
-                     text='<b>KAZGUU site</b>,<a href="http://kazguu.kz/ru/">KAZGUU</a>', parse_mode=ParseMode.HTML)
+                     text='<b>ФУТБОЛ site</b>,<a href="https://vk.com/uefanews/">ФУТБОЛ</a>', parse_mode=ParseMode.HTML)
 
 
 def football(bot, update):
     """Вывести сообщение, когда отправлена команда /start.
     Это может быть сообщение о том, что ваш бот может делать и список команд"""
-    update.message.reply_text('Тут вы можете получить любую помощь.')
+    update.message.reply_text('Поможем найти все про футбол и даже больше.')
 
-    keyboardButtons = [[InlineKeyboardButton("BAR", url1="numl.org/ebc")],
+    keyboardButtons = [[InlineKeyboardButton("BAR", url="numl.org/ebc")],
                        [InlineKeyboardButton("Трансляции", url="https://www.soccerstand.com/ru/")],
                        [InlineKeyboardButton("ЛЕ", url="numl.org/ebe")],
                       [InlineKeyboardButton("ЛЧ", url="https://clck.ru/EgJi3")]]
     keyboard = InlineKeyboardMarkup(keyboardButtons)
-    update.message.reply_text('Сделайте выбор:', reply_markup=keyboard)
+    update.message.reply_text('Что вам угодно?:', reply_markup=keyboard)
 
 
 def button(bot, update):
