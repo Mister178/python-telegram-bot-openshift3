@@ -27,7 +27,8 @@ def football(bot, update):
                        [InlineKeyboardButton("Трансляции", url="https://www.soccerstand.com/ru/")],
                        [InlineKeyboardButton("ЛЕ", url="numl.org/ebe")],
                        [InlineKeyboardButton("ЛЧ", url="https://clck.ru/EgJi3")],
-                      [InlineKeyboardButton("Футбольные гимны", url="numl.org/ebN")]]
+                       [InlineKeyboardButton("Футбольные гимны", url="numl.org/ebN")],
+                      [InlineKeyboardButton("Олимп", url="https://olimp.kz/")]]
     keyboard = InlineKeyboardMarkup(keyboardButtons)
     update.message.reply_text('Что вам угодно?:', reply_markup=keyboard)
 
