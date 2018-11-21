@@ -15,7 +15,7 @@ def start(bot, update):
     Обычно это приветственное сообщение"""
     """update.message.reply_text('Welcome to the Test Bot! I will reply you what you will write me.')"""
     bot.send_message(chat_id=update.message.chat_id,
-                     text='<b>ФУТБОЛ site</b>,<a href="https://vk.com/uefanews/">ФУТБОЛ</a>', parse_mode=ParseMode.HTML)
+                     text='<b>ФУТБОЛ site</b>,<a href="https://vk.com/uefanews">ФУТБОЛ</a>', parse_mode=ParseMode.HTML)
 
 
 def football(bot, update):
@@ -26,7 +26,8 @@ def football(bot, update):
     keyboardButtons = [[InlineKeyboardButton("BAR", url="numl.org/ebc")],
                        [InlineKeyboardButton("Трансляции", url="https://www.soccerstand.com/ru/")],
                        [InlineKeyboardButton("ЛЕ", url="numl.org/ebe")],
-                      [InlineKeyboardButton("ЛЧ", url="https://clck.ru/EgJi3")]]
+                       [InlineKeyboardButton("ЛЧ", url="https://clck.ru/EgJi3")],
+                      [InlineKeyboardButton("Футбольные гимны", url="numl.org/ebN")]]
     keyboard = InlineKeyboardMarkup(keyboardButtons)
     update.message.reply_text('Что вам угодно?:', reply_markup=keyboard)
 
