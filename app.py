@@ -316,7 +316,7 @@ def keepalive():
     r.status_code
 
 keep = Timer(600000, keepalive)
-# keep.start()
+keep.start()
 
 if __name__ == '__main__':
     main()
